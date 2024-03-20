@@ -1,12 +1,30 @@
+// Header fixed
+window.onscroll = function () {
+  myFunctionSticky()
+}
+
+var navbar = document.querySelector("header")
+var sticky = navbar.offsetTop
+
+function myFunctionSticky() {
+  if (window.pageYOffset < 50) {
+    navbar.classList.remove("fixed-header")
+  } else {
+    navbar.classList.add("fixed-header")
+  }
+}
+
 // Menu
 const btnMenu = document.querySelectorAll(".icon_bars")
-const toggleMenu = document.querySelector(".menu-desktop")
+const toggleMenuDesktop = document.querySelector(".menu-desktop")
+const toggleMenuMoblie = document.querySelector(".menu-moblie")
 btnMenu.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("open")
-    toggleMenu.classList.toggle("invisible")
-    toggleMenu.classList.toggle("opacity-0")
-    toggleMenu.classList.toggle("translate-y-4")
+    toggleMenuDesktop.classList.toggle("invisible")
+    toggleMenuDesktop.classList.toggle("opacity-0")
+    toggleMenuDesktop.classList.toggle("translate-y-4")
+    toggleMenuMoblie.classList.toggle("max-h-[100rem]")
   })
 })
 

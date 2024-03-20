@@ -168,6 +168,39 @@
   .active-bg-menu {
     @apply bg-[var(--primary)] text-white;
   }
+
+  .menu-moblie .container > ul > li > a {
+    @apply py-2 block capitalize text-[16px] hover:text-[var(--primary)] font-bold;
+  }
+
+  .menu-moblie .container > ul > li {
+    @apply border-b border-solid border-slate-200;
+  }
+
+  .menu-moblie-item {
+    @apply max-h-0 overflow-hidden duration-500 transition-all ease-in-out ml-4;
+  }
+
+  .menu-moblie-item li a {
+    @apply pb-2 block hover:text-[var(--primary)] font-semibold capitalize;
+  }
+
+  .menu-moblie .container > ul > li:hover i {
+    @apply rotate-90;
+  }
+}
+
+.menu-moblie .container > ul > li:hover .menu-moblie-item {
+  max-height: 15rem;
+}
+
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  animation: up 0.3s 0s linear;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .text-active {
@@ -343,4 +376,13 @@
 }
 .swiper-pagination-banner .swiper-pagination-progressbar-fill {
   background: white;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

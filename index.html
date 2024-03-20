@@ -26,7 +26,9 @@
   </head>
   <body>
     <header>
-      <div class="header-big z-50 relative bg-white">
+      <div
+        class="header-big z-50 relative bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0]"
+      >
         <div class="container hidden py-3 sm:flex justify-between items-center">
           <a href="">
             <img
@@ -64,7 +66,9 @@
         </div>
       </div>
 
-      <div class="header-moblie z-50 relative bg-white">
+      <div
+        class="header-moblie z-50 relative bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0]"
+      >
         <div class="container flex sm:hidden py-5 items-center">
           <div class="w-[15%]">
             <div class="icon_bars">
@@ -92,8 +96,9 @@
         </div>
       </div>
 
+      <!-- Menu desktop -->
       <div
-        class="menu-desktop fixed inset-0 pt-10 z-40 bg-white invisible opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
+        class="menu-desktop hidden md:block fixed inset-0 pt-10 z-40 bg-white invisible opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
       >
         <div class="relative h-full">
           <div class="container py-10 h-full">
@@ -290,6 +295,94 @@
           </div>
         </div>
       </div>
+
+      <!-- Menu moblie -->
+      <div
+        class="menu-moblie md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white"
+      >
+        <div class="container">
+          <ul>
+            <li>
+              <a
+                href="./index.html"
+                class="w-full flex justify-between items-center"
+              >
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./src/pages/gioi-thieu.html"
+                class="w-full flex justify-between items-center"
+              >
+                <span>Giới Thiệu</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="w-full flex justify-between items-center">
+                <span class="flex items-center justify-between w-full">
+                  <span>Sản phẩm</span>
+                  <i class="fa-solid fa-chevron-right mr-2"></i>
+                </span>
+                <div class="menu-moblie-item">
+                  <ul>
+                    <li>
+                      <a href="./src/pages/san-pham.html">Keo Công Nghiệp</a>
+                    </li>
+                    <li>
+                      <a href="./src/pages/san-pham.html"
+                        >Nguyên liệu sơn nước & hóa chất xây dựng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./src/pages/san-pham.html"
+                        >Hóa chất cho in vải & Dệt Nhuộm</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./src/pages/san-pham.html"
+                        >Hóa chất cho dệt nhuộm</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./src/pages/san-pham.html"
+                        >Hóa chất cho in Vải</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./src/pages/san-pham.html">Hóa chất khác</a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./src/pages/tu-van-san-pham.html"
+                class="w-full flex justify-between items-center"
+              >
+                <span>tư vấn sản phẩm</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./src/pages/tin-tuc-su-kien.html"
+                class="w-full flex justify-between items-center"
+              >
+                <span>Tin tức & sự kiện</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./src/pages/lien-he.html"
+                class="w-full flex justify-between items-center"
+              >
+                <span>Liên hệ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -407,7 +500,7 @@
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="stroke-white hover:stroke-[var(--primary)] hover:scale-125 transition-all duration-500 ease-in-out"
+                class="stroke-white hover:stroke-[img__ transition-all duration-500 ease-in-out"
               >
                 <path
                   d="M25 30L15 20L25 10"
@@ -426,7 +519,7 @@
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="stroke-white hover:stroke-[var(--primary)] hover:scale-125 transition-all duration-500 ease-in-out"
+                class="stroke-white hover:stroke-[img__ transition-all duration-500 ease-in-out"
               >
                 <path
                   d="M15 30L25 20L15 10"
@@ -1070,7 +1163,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-1.png"
@@ -1096,7 +1189,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-2.png"
@@ -1122,7 +1215,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-3.png"
@@ -1148,7 +1241,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-4.png"
@@ -1174,7 +1267,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-1.png"
@@ -1200,7 +1293,7 @@
                   <div>
                     <div class="w-full overflow-hidden">
                       <div
-                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                        class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
                           src="src/imgs/tin-tuc-2.png"
@@ -1340,7 +1433,7 @@
               class="flex space-x-2 items-center group"
             >
               <span
-                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white"
                 ><i class="fa-brands fa-facebook-f"></i
               ></span>
               <span class="group-hover:text-white hidden md:block"
@@ -1353,7 +1446,7 @@
               class="flex space-x-2 items-center group"
             >
               <span
-                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white"
                 ><i class="fa-brands fa-twitter"></i
               ></span>
               <span class="group-hover:text-white hidden md:block"
@@ -1366,7 +1459,7 @@
               class="flex space-x-2 items-center group"
             >
               <span
-                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white"
                 ><i class="fa-brands fa-instagram"></i
               ></span>
               <span class="group-hover:text-white hidden md:block"
