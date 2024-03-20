@@ -1,9 +1,12 @@
 // Menu
 const btnMenu = document.querySelectorAll(".icon_bars")
-
+const toggleMenu = document.querySelector(".menu-desktop")
 btnMenu.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.toggle("open")
+    toggleMenu.classList.toggle("invisible")
+    toggleMenu.classList.toggle("opacity-0")
+    toggleMenu.classList.toggle("translate-y-4")
   })
 })
 
@@ -234,28 +237,46 @@ if (document.querySelector(".menu-san-pham")) {
   })
 }
 
-const danh_muc_menu = document.querySelectorAll(".menu-desktop-danh-muc ul li")
-danh_muc_menu.forEach((i) => {
-  // console.log(i.querySelector("a").getAttribute("category"))
-})
+const all_danh_muc_menu = document.querySelectorAll(
+  ".menu-desktop-danh-muc ul li"
+)
+const all_menu_item_danh_muc = document.querySelectorAll(".menu-item-danh-muc")
+const all_menu_item_sp = document.querySelectorAll(".menu-item-sp")
 
-const menu_item_danh_muc = document.querySelectorAll(".menu-item-danh-muc")
-menu_item_danh_muc.forEach((i) => {
-  // console.log(i.getAttribute("category"))
-})
-
-danh_muc_menu.forEach((i) => {
+all_danh_muc_menu.forEach((i) => {
   i.addEventListener("mouseenter", () => {
-    menu_item_danh_muc.forEach((z) => {
+    all_menu_item_sp.forEach((d) => d.classList.remove("active-menu"))
+    all_menu_item_danh_muc.forEach((z) => {
       if (
         z.getAttribute("category") ===
         i.querySelector("a").getAttribute("category")
       ) {
-        menu_item_danh_muc.forEach((d) => d.classList.remove("active-menu"))
+        all_menu_item_danh_muc.forEach((d) => d.classList.remove("active-menu"))
         z.classList.add("active-menu")
       } else {
         z.classList.remove("active-menu")
       }
+    })
+  })
+})
+
+all_menu_item_danh_muc.forEach((i) => {
+  i.querySelectorAll("li a").forEach((u) => {
+    u.addEventListener("mouseenter", () => {
+      i.querySelectorAll("li a").forEach((a) =>
+        a.classList.remove("active-bg-menu")
+      )
+      u.classList.add("active-bg-menu")
+      all_menu_item_sp.forEach((z) => {
+        if (
+          z.getAttribute("category-item") === u.getAttribute("category-item")
+        ) {
+          all_menu_item_sp.forEach((d) => d.classList.remove("active-menu"))
+          z.classList.add("active-menu")
+        } else {
+          z.classList.remove("active-menu")
+        }
+      })
     })
   })
 })
