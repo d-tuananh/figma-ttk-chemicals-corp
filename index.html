@@ -25,73 +25,75 @@
     <link rel="stylesheet" href="src/css/main.css" />
   </head>
   <body>
-    <header class="bg-white">
-      <div
-        class="container hidden py-3 sm:flex justify-between items-center header-big"
-      >
-        <a href="">
-          <img
-            src="src/imgs/logo-header.png"
-            width="229"
-            height="47"
-            alt="Logo-header"
-          />
-        </a>
-        <div class="text-[0.7rem] flex items-center">
-          <div
-            class="flex p-1 border border-solid border-[#CFCFCF] rounded-full mr-[1.1rem]"
-          >
-            <span
-              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
-              >VN</span
+    <header>
+      <div class="header-big z-50 relative bg-white">
+        <div class="container hidden py-3 sm:flex justify-between items-center">
+          <a href="">
+            <img
+              src="src/imgs/logo-header.png"
+              width="229"
+              height="47"
+              alt="Logo-header"
+            />
+          </a>
+          <div class="text-[0.7rem] flex items-center">
+            <div
+              class="flex p-1 border border-solid border-[#CFCFCF] rounded-full mr-[1.1rem]"
             >
-            <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
-            <span
-              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
-              >EN</span
-            >
-            <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
-            <span
-              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
-              >CN</span
-            >
-          </div>
-          <div class="icon_bars">
-            <span></span>
-            <span></span>
-            <span></span>
+              <span
+                class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+                >VN</span
+              >
+              <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
+              <span
+                class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+                >EN</span
+              >
+              <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
+              <span
+                class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+                >CN</span
+              >
+            </div>
+            <div class="icon_bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="header-moblie container flex sm:hidden py-5 items-center">
-        <div class="w-[15%]">
-          <div class="icon_bars">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="header-moblie z-50 relative bg-white">
+        <div class="container flex sm:hidden py-5 items-center">
+          <div class="w-[15%]">
+            <div class="icon_bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
 
-        <a href="" class="grow img__center">
-          <img
-            src="src/imgs/logo-header-moblie.png"
-            width="127"
-            height="26"
-            alt="Logo-header-moblie"
-          />
-        </a>
-        <div class="w-[15%] flex justify-end text-black">
-          <select name="" id="" class="">
-            <option value="">VN</option>
-            <option value="">EN</option>
-            <option value="">CN</option>
-          </select>
+          <a href="" class="grow img__center">
+            <img
+              src="src/imgs/logo-header-moblie.png"
+              width="127"
+              height="26"
+              alt="Logo-header-moblie"
+            />
+          </a>
+          <div class="w-[15%] flex justify-end text-black">
+            <select name="" id="" class="">
+              <option value="">VN</option>
+              <option value="">EN</option>
+              <option value="">CN</option>
+            </select>
+          </div>
         </div>
       </div>
 
       <div
-        class="menu-desktop fixed inset-x-0 bottom-0 h-[93%] z-40 bg-white invisible opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
+        class="menu-desktop fixed inset-0 pt-10 z-40 bg-white invisible opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
       >
         <div class="relative h-full">
           <div class="container py-10 h-full">
@@ -102,21 +104,21 @@
                 <ul>
                   <li>
                     <a
-                      href=""
+                      href="./index.html"
                       class="w-full flex justify-between items-center"
                       category="1"
                     >
-                      <span>Trang chủ </span>
+                      <span>Trang chủ</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="./src/pages/gioi-thieu.html"
                       class="w-full flex justify-between items-center"
                       category="2"
                     >
-                      <span>Giới THIỆU </span>
+                      <span>Giới THIỆU</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
@@ -126,37 +128,37 @@
                       class="w-full flex justify-between items-center"
                       category="3"
                     >
-                      <span>Sản phẩm </span>
+                      <span>Sản phẩm</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="./src/pages/tu-van-san-pham.html"
                       class="w-full flex justify-between items-center"
                       category="4"
                     >
-                      <span>TƯ VẤN SẢN PHẨM </span>
+                      <span>TƯ VẤN SẢN PHẨM</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="./src/pages/tin-tuc-su-kien.html"
                       class="w-full flex justify-between items-center"
                       category="5"
                     >
-                      <span>Tin tức & sự kiện </span>
+                      <span>Tin tức & sự kiện</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="./src/pages/lien-he.html"
                       class="w-full flex justify-between items-center"
                       category="6"
                     >
-                      <span>Liên hệ </span>
+                      <span>Liên hệ</span>
                       <i class="fa-solid fa-chevron-right translate-x-10"></i>
                     </a>
                   </li>
@@ -167,45 +169,61 @@
                 category="3"
               >
                 <ul>
-                  <li><a href="" category-item="3.1">Keo Công Nghiệp</a></li>
                   <li>
-                    <a href="" category-item="3.2"
+                    <a href="./src/pages/san-pham.html" category-item="3.1"
+                      >Keo Công Nghiệp</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./src/pages/san-pham.html" category-item="3.2"
                       >Nguyên liệu sơn nước & HÓA CHẤT XÂY DỰNG</a
                     >
                   </li>
                   <li>
-                    <a href="" category-item="3.3"
+                    <a href="./src/pages/san-pham.html" category-item="3.3"
                       >Hóa chất cho in vải & DệT Nhuộm</a
                     >
                   </li>
                   <li>
-                    <a href="" category-item="3.4">Hóa chất cho dệt nhuộm</a>
+                    <a href="./src/pages/san-pham.html" category-item="3.4"
+                      >Hóa chất cho dệt nhuộm</a
+                    >
                   </li>
                   <li>
-                    <a href="" category-item="3.5">Hóa chất cho in Vải</a>
+                    <a href="./src/pages/san-pham.html" category-item="3.5"
+                      >Hóa chất cho in Vải</a
+                    >
                   </li>
-                  <li><a href="" category-item="3.6">Hóa chất khác</a></li>
+                  <li>
+                    <a href="./src/pages/san-pham.html" category-item="3.6"
+                      >Hóa chất khác</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div
                 class="w-1/2 absolute inset-y-0 right-0 menu-item-danh-muc"
-                category="2"
+                category="4"
               >
                 <ul>
                   <li>
-                    <a href="" category-item="2.1">Lorem, ipsum dolor.</a>
+                    <a href="" category-item="4.1"
+                      >CÁCH KIỂM TRA VÀ ĐÁNH GIÁ KHẢ NĂNG CHỊU NƯỚC CỦA SƠN
+                      PHỦ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-1/2 absolute inset-y-0 right-0 menu-item-danh-muc"
+                category="5"
+              >
+                <ul>
+                  <li>
+                    <a href="" category-item="5.1">Tin tức</a>
                   </li>
                   <li>
-                    <a href="" category-item="2.2">Lorem, ipsum dolor.</a>
-                  </li>
-                  <li>
-                    <a href="" category-item="2.3">Lorem, ipsum dolor.</a>
-                  </li>
-                  <li>
-                    <a href="" category-item="2.4">Lorem, ipsum dolor.</a>
-                  </li>
-                  <li>
-                    <a href="" category-item="2.5">Lorem, ipsum dolor.</a>
+                    <a href="" category-item="5.2">Sự kiện</a>
                   </li>
                 </ul>
               </div>
@@ -213,11 +231,11 @@
           </div>
           <div
             class="absolute inset-y-0 right-0 w-1/2 size-full bg-gradient-to-r from-[#075DA9] to-[#00BBF1] px-8 py-12 text-white menu-item-sp"
-            category-item="2.1"
+            category-item="3.1"
           >
             <ul>
               <p class="uppercase pb-5 mb-5 border-b border-solid border-white">
-                Nguyên liệu sơn nước & HÓA CHẤT XÂY DỰNG
+                Keo công nghiệp
               </p>
               <a
                 href=""
@@ -226,11 +244,8 @@
                 <span>Xem tất cả</span>
                 <i class="fa-solid fa-chevron-right"></i>
               </a>
-              <li><a href="">Lorem, ipsum dolor.</a></li>
-              <li><a href="">Lorem, ipsum dolor.</a></li>
-              <li><a href="">Lorem, ipsum dolor.</a></li>
-              <li><a href="">Lorem, ipsum dolor.</a></li>
-              <li><a href="">Lorem, ipsum dolor.</a></li>
+              <li><a href="">Loại 1</a></li>
+              <li><a href="">Loại 2</a></li>
             </ul>
           </div>
           <div
@@ -248,11 +263,29 @@
                 <span>Xem tất cả</span>
                 <i class="fa-solid fa-chevron-right"></i>
               </a>
-              <li><a href="">Màu hữu cơ in vải</a></li>
-              <li><a href="">Trợ chất in Pigment</a></li>
-              <li><a href="">Mực in trắng bóng</a></li>
-              <li><a href="">Mực in Silicone</a></li>
-              <li><a href="">Chất hoàn tất cho Dệt nhuộm</a></li>
+              <li>
+                <a href="./src/pages/chi-tiet-danh-muc.html"
+                  >Màu hữu cơ in vải</a
+                >
+              </li>
+              <li>
+                <a href="./src/pages/chi-tiet-danh-muc.html"
+                  >Trợ chất in Pigment</a
+                >
+              </li>
+              <li>
+                <a href="./src/pages/chi-tiet-danh-muc.html"
+                  >Mực in trắng bóng</a
+                >
+              </li>
+              <li>
+                <a href="./src/pages/chi-tiet-danh-muc.html">Mực in Silicone</a>
+              </li>
+              <li>
+                <a href="./src/pages/chi-tiet-danh-muc.html"
+                  >Chất hoàn tất cho Dệt nhuộm</a
+                >
+              </li>
             </ul>
           </div>
         </div>

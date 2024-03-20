@@ -145,7 +145,7 @@
   }
 
   .menu-desktop-danh-muc ul li {
-    @apply py-5 first:pt-0 text-[1.2rem] uppercase font-bold text-black hover:text-[var(--primary)] overflow-hidden w-full;
+    @apply py-5 first:pt-0 xl:text-[1.2rem] uppercase font-bold text-black hover:text-[var(--primary)] overflow-hidden w-full;
   }
 
   .menu-item-danh-muc,
@@ -168,6 +168,10 @@
   .active-bg-menu {
     @apply bg-[var(--primary)] text-white;
   }
+}
+
+.text-active {
+  color: var(--primary) !important;
 }
 
 .item-san-pham-active {

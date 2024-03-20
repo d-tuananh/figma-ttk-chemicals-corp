@@ -245,7 +245,13 @@ const all_menu_item_sp = document.querySelectorAll(".menu-item-sp")
 
 all_danh_muc_menu.forEach((i) => {
   i.addEventListener("mouseenter", () => {
-    all_menu_item_sp.forEach((d) => d.classList.remove("active-menu"))
+    all_menu_item_sp.forEach((d) => {
+      d.classList.remove("active-menu")
+    })
+    all_danh_muc_menu.forEach((e) => {
+      e.classList.remove("text-active")
+    })
+    i.classList.add("text-active")
     all_menu_item_danh_muc.forEach((z) => {
       if (
         z.getAttribute("category") ===
