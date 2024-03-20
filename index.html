@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <header class="bg-white/90">
+      <div
+        class="container hidden py-3 sm:flex justify-between items-center header-big"
+      >
+        <a href="">
+          <img
+            src="src/imgs/logo-header.png"
+            width="229"
+            height="47"
+            alt="Logo-header"
+          />
+        </a>
+        <div class="text-[0.7rem] flex items-center">
+          <div
+            class="flex p-1 border border-solid border-[#CFCFCF] rounded-full mr-[1.1rem]"
+          >
+            <span
+              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+              >VN</span
+            >
+            <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
+            <span
+              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+              >EN</span
+            >
+            <span class="w-[1px] h-4 bg-[var(--secondary)]"></span>
+            <span
+              class="px-[.4rem] hover:text-[var(--primary)] cursor-pointer transition-colors duration-300 ease-in font-semibold"
+              >CN</span
+            >
+          </div>
+          <div class="icon_bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-moblie container flex sm:hidden py-5 items-center">
+        <div class="w-[15%]">
+          <div class="icon_bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <a href="" class="grow img__center">
+          <img
+            src="src/imgs/logo-header-moblie.png"
+            width="127"
+            height="26"
+            alt="Logo-header-moblie"
+          />
+        </a>
+        <div class="w-[15%] flex justify-end text-black">
+          <select name="" id="" class="">
+            <option value="">VN</option>
+            <option value="">EN</option>
+            <option value="">CN</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="menu-desktop">
+        <div class="relative">
+          <div class="container py-10">
+            <div class="w-1/2 flex -mx-5 relative">
+              <div
+                class="menu-desktop-danh-muc w-1/2 border-r border-solid border-slate-300 px-5"
+              >
+                <ul>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="1"
+                    >
+                      <span>Trang chủ </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="2"
+                    >
+                      <span>Giới THIỆU </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="3"
+                    >
+                      <span>Sản phẩm </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="4"
+                    >
+                      <span>TƯ VẤN SẢN PHẨM </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="5"
+                    >
+                      <span>Tin tức & sự kiện </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="w-full flex justify-between items-center"
+                      category="6"
+                    >
+                      <span>Liên hệ </span>
+                      <i class="fa-solid fa-chevron-right translate-x-10"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-1/2 absolute inset-y-0 right-0 px-5 menu-item-danh-muc"
+                category="3"
+              >
+                <ul>
+                  <li><a href="">Keo Công Nghiệp</a></li>
+                  <li>
+                    <a href="">Nguyên liệu sơn nước & HÓA CHẤT XÂY DỰNG</a>
+                  </li>
+                  <li><a href="">Hóa chất cho in vải & DệT Nhuộm</a></li>
+                  <li><a href="">Hóa chất cho dệt nhuộm</a></li>
+                  <li><a href="">Hóa chất cho in Vải</a></li>
+                  <li><a href="">Hóa chất khác</a></li>
+                </ul>
+              </div>
+              <div
+                class="w-1/2 absolute inset-y-0 right-0 px-5 menu-item-danh-muc"
+                category="2"
+              >
+                <ul>
+                  <li><a href="">Lorem, ipsum dolor.</a></li>
+                  <li>
+                    <a href="">Lorem, ipsum dolor.</a>
+                  </li>
+                  <li><a href="">Lorem, ipsum dolor.</a></li>
+                  <li><a href="">Lorem, ipsum dolor.</a></li>
+                  <li><a href="">Lorem, ipsum dolor.</a></li>
+                  <li><a href="">Lorem, ipsum dolor.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 w-1/2 size-full bg-gradient-to-r from-[#075DA9] to-[#00BBF1] px-8 py-12 text-white menu-item-sp"
+          >
+            <ul>
+              <p class="uppercase pb-5 mb-5 border-b border-solid border-white">
+                Nguyên liệu sơn nước & HÓA CHẤT XÂY DỰNG
+              </p>
+              <a
+                href=""
+                class="mb-6 flex border border-solid border-transparent space-x-2 rounded-full py-2 px-3 bg-white text-[var(--primary)] w-fit items-center hover:bg-[--bg-primary] hover:text-white hover:border-white"
+              >
+                <span>Xem tất cả</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <li><a href="">Lorem, ipsum dolor.</a></li>
+              <li><a href="">Lorem, ipsum dolor.</a></li>
+              <li><a href="">Lorem, ipsum dolor.</a></li>
+              <li><a href="">Lorem, ipsum dolor.</a></li>
+              <li><a href="">Lorem, ipsum dolor.</a></li>
+            </ul>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 w-1/2 size-full bg-gradient-to-r from-[#075DA9] to-[#00BBF1] px-8 py-12 text-white menu-item-sp"
+          >
+            <ul>
+              <p class="uppercase pb-5 mb-5 border-b border-solid border-white">
+                Hóa chất cho in vải & DệT Nhuộm
+              </p>
+              <a
+                href=""
+                class="mb-6 flex border border-solid border-transparent space-x-2 rounded-full py-2 px-3 bg-white text-[var(--primary)] w-fit items-center hover:bg-[--bg-primary] hover:text-white hover:border-white"
+              >
+                <span>Xem tất cả</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <li><a href="">Màu hữu cơ in vải</a></li>
+              <li><a href="">Trợ chất in Pigment</a></li>
+              <li><a href="">Mực in trắng bóng</a></li>
+              <li><a href="">Mực in Silicone</a></li>
+              <li><a href="">Chất hoàn tất cho Dệt nhuộm</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section>
+        <div class="swiper-container">
+          <div class="swiper banner-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="w-full video__pt pt-[95%] md:pt-[48%]">
+                  <video autoplay muted playsinline>
+                    <source
+                      src="./src/video/video-banner.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support HTML video.
+                  </video>
+                  <div class="absolute inset-0 flex lg:items-center z-[5]">
+                    <div class="container py-8">
+                      <div class="w-full md:w-3/4 2xl:w-1/2 my-auto text-white">
+                        <h1
+                          class="text-[1.5rem] sm:text-[2rem] xl:text-[3.2rem] uppercase"
+                        >
+                          Chất lượng đến từ sự chuyên nghiệp
+                        </h1>
+                        <p class="mt-[1.2rem] mb-[1.6rem]">
+                          Với phương châm sáng tạo để phát triển, chúng tôi
+                          không ngừng đổi mới nhằm mang lại nguồn cung tốt nhất
+                          cho thị trường, vươn lên trở thành một công ty cung
+                          ứng Hóa chất hàng đầu tại Việt Nam.
+                        </p>
+                        <button
+                          class="group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:bg-[var(--primary)] hover:border-transparent transition-all duration-500 ease-in-out"
+                        >
+                          <span>Khám phá ngay</span>
+                          <img
+                            src="./src/svg/arrow-right.svg"
+                            alt="arrow-right"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full img__pt pt-[95%] md:pt-[48%]">
+                  <img src="./src/imgs/banner-gioi-thieu.png" alt="" />
+                  <div class="absolute inset-0 flex lg:items-center z-[5]">
+                    <div class="container py-8">
+                      <div class="w-full md:w-3/4 2xl:w-1/2 my-auto text-white">
+                        <h1
+                          class="text-[1.5rem] sm:text-[2rem] xl:text-[3.2rem] uppercase"
+                        >
+                          Chất lượng đến từ sự chuyên nghiệp
+                        </h1>
+                        <p class="mt-[1.2rem] mb-[1.6rem]">
+                          Với phương châm sáng tạo để phát triển, chúng tôi
+                          không ngừng đổi mới nhằm mang lại nguồn cung tốt nhất
+                          cho thị trường, vươn lên trở thành một công ty cung
+                          ứng Hóa chất hàng đầu tại Việt Nam.
+                        </p>
+                        <button
+                          class="group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:bg-[var(--primary)] hover:border-transparent transition-all duration-500 ease-in-out"
+                        >
+                          <span>Khám phá ngay</span>
+                          <img
+                            src="./src/svg/arrow-right.svg"
+                            alt="arrow-right"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full img__pt pt-[95%] md:pt-[48%]">
+                  <img src="./src/imgs/banner-gioi-thieu.png" alt="" />
+                  <div class="absolute inset-0 flex lg:items-center z-[5]">
+                    <div class="container py-8">
+                      <div class="w-full md:w-3/4 2xl:w-1/2 my-auto text-white">
+                        <h1
+                          class="text-[1.5rem] sm:text-[2rem] xl:text-[3.2rem] uppercase"
+                        >
+                          Chất lượng đến từ sự chuyên nghiệp
+                        </h1>
+                        <p class="mt-[1.2rem] mb-[1.6rem]">
+                          Với phương châm sáng tạo để phát triển, chúng tôi
+                          không ngừng đổi mới nhằm mang lại nguồn cung tốt nhất
+                          cho thị trường, vươn lên trở thành một công ty cung
+                          ứng Hóa chất hàng đầu tại Việt Nam.
+                        </p>
+                        <button
+                          class="group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:bg-[var(--primary)] hover:border-transparent transition-all duration-500 ease-in-out"
+                        >
+                          <span>Khám phá ngay</span>
+                          <img
+                            src="./src/svg/arrow-right.svg"
+                            alt="arrow-right"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-banner-prev absolute top-1/2 left-0 -translate-y-1/2 z-[5] p-3 hidden lg:block"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-white hover:stroke-[var(--primary)] hover:scale-125 transition-all duration-500 ease-in-out"
+              >
+                <path
+                  d="M25 30L15 20L25 10"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div
+              class="swiper-banner-next absolute top-1/2 right-0 -translate-y-1/2 z-[5] p-3 hidden lg:block"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-white hover:stroke-[var(--primary)] hover:scale-125 transition-all duration-500 ease-in-out"
+              >
+                <path
+                  d="M15 30L25 20L15 10"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="absolute bottom-0 pb-[2%] 2xl:pb-[4%] inset-x-0 z-[5]">
+              <div class="flex items-end space-x-2 container">
+                <div
+                  class="swiper-slide-count text-white text-[1.6rem] font-light"
+                ></div>
+                <div
+                  class="swiper-pagination-banner relative max-w-[300px] mb-2"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gioi thieu -->
+      <section class="relative mt-[4.8rem]">
+        <div class="container">
+          <div class="flex flex-col sm:flex-row">
+            <div class="sm:w-1/2 w-full">
+              <h4
+                class="text-[var(--primary)] text-[2rem] uppercase font-semibold"
+              >
+                Giới thiệu
+              </h4>
+              <p
+                class="text-justify lg:text-[0.8rem] pt-5 pb-7 sm:pt-[1.6rem] sm:pb-[2.4rem]"
+              >
+                Được thành lập và phát triển từ năm 1988, Công ty Hóa chất T.T.K
+                được xem như một trong những người tiên phong trong lĩnh vực sản
+                xuất và kinh doanh hóa chất tại Việt Nam. Với một nền móng vững
+                chắc cùng bề dày lịch sử hoạt động, hiện nay chúng tôi trở thành
+                một công ty có uy tín hàng đầu trong lĩnh vực Hóa chất tại Việt
+                Nam.
+              </p>
+              <button
+                class="hidden group text-[var(--primary)] text-[0.8rem] uppercase font-semibold sm:flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
+              >
+                <span>Khám phá ngay</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="24"
+                  viewBox="0 0 26 24"
+                  fill="none"
+                  class="fill-[var(--primary)] group-hover:fill-white group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                >
+                  <g clip-path="url(#clip0_421_743)">
+                    <path
+                      d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_421_743">
+                      <rect
+                        width="25"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div class="sm:w-1/2 w-full sm:ml-14 run-number">
+              <div class="sm:-mx-7 flex flex-wrap relative">
+                <div
+                  class="absolute w-full sm:w-1/2 h-[1px] bg-[#D4D4D4] bottom-1/2 left-1/2 -translate-x-1/2"
+                ></div>
+                <div
+                  class="absolute w-[1px] h-full sm:h-3/4 bg-[#D4D4D4] bottom-1/2 left-1/2 translate-y-1/2"
+                ></div>
+                <div
+                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
+                >
+                  <span
+                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                    count-end="36+"
+                    >0
+                  </span>
+                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                    Năm thành lập
+                  </p>
+                </div>
+                <div
+                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
+                >
+                  <span
+                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                    count-end="40+"
+                    >0
+                  </span>
+                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                    Nhãn hàng hợp tác
+                  </p>
+                </div>
+                <div
+                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
+                >
+                  <span
+                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                    count-end="150+"
+                    >0
+                  </span>
+                  <p class="text-[1.1rem] sm:text-[0.8rem] font-semibold">
+                    Nhân viên
+                  </p>
+                </div>
+                <div
+                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
+                >
+                  <span
+                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                    count-end="10+"
+                    >0
+                  </span>
+                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                    Giải thưởng
+                  </p>
+                </div>
+              </div>
+              <div class="w-full mt-9">
+                <button
+                  class="w-fit mx-auto group text-[var(--primary)] uppercase font-semibold sm:hidden flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
+                >
+                  <p>Khám phá ngay</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-[var(--primary)] group-hover:fill-white group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_911)">
+                      <path
+                        d="M15.6536 14.6376L19.7946 10.4966C19.9261 10.3647 20 10.1861 20 9.99977C20 9.81349 19.9261 9.63481 19.7946 9.50294L15.6536 5.36196C15.5618 5.27046 15.4374 5.21913 15.3078 5.21924C15.1782 5.21935 15.0539 5.27089 14.9623 5.36254C14.8706 5.45419 14.8191 5.57847 14.819 5.70809C14.8189 5.8377 14.8702 5.96207 14.9617 6.05387L18.4184 9.51051H0.489258C0.359499 9.51051 0.235054 9.56206 0.1433 9.65381C0.0515467 9.74557 0 9.87001 0 9.99977C0 10.1295 0.0515467 10.254 0.1433 10.3457C0.235054 10.4375 0.359499 10.489 0.489258 10.489H18.4184L14.9617 13.9457C14.8702 14.0375 14.8189 14.1618 14.819 14.2915C14.8191 14.4211 14.8706 14.5454 14.9623 14.637C15.0539 14.7287 15.1782 14.7802 15.3078 14.7803C15.4374 14.7804 15.5618 14.7291 15.6536 14.6376Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_911">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute w-1/3 h-20 bg-[#EFEFEF] left-0 bottom-0 -translate-y-1/4 lg:-translate-y-1/2 hidden sm:block"
+        ></div>
+      </section>
+
+      <!-- Chatluong &  Sang tao -->
+      <section class="mt-14 sm:mt-7">
+        <div class="container">
+          <h4
+            class="text-[var(--primary)] text-[2rem] uppercase font-semibold mb-6 lg:mb-16"
+          >
+            Chất lượng & Sáng tạo
+          </h4>
+          <div class="flex flex-wrap justify-between -mx-4">
+            <div class="w-1/2 lg:w-fit p-4">
+              <div class="flex flex-col h-full">
+                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                  <img
+                    src="src/imgs/Tính bền vững .png"
+                    width=""
+                    height=""
+                    alt="Tính bền vững "
+                  />
+                </div>
+                <p
+                  class="sm:text-[0.8rem] capitalize font-semibold sm:text-center mt-[1.6rem]"
+                >
+                  Tính bền vững
+                </p>
+              </div>
+            </div>
+            <div class="w-1/2 lg:w-fit p-4">
+              <div class="flex flex-col h-full">
+                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                  <img
+                    src="src/imgs/Chất lượng và an toàn.png"
+                    width=""
+                    height=""
+                    alt="Chất lượng và an toàn"
+                  />
+                </div>
+                <p
+                  class="sm:text-[0.8rem] capitalize font-semibold sm:text-center mt-[1.6rem]"
+                >
+                  Chất lượng và an toàn
+                </p>
+              </div>
+            </div>
+            <div class="w-1/2 lg:w-fit p-4">
+              <div class="flex flex-col h-full">
+                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                  <img
+                    src="src/imgs/Sáng tạo và nghiên cứu phát triển.png"
+                    width=""
+                    height=""
+                    alt="Sáng tạo và nghiên cứu phát triển"
+                  />
+                </div>
+                <p
+                  class="sm:text-[0.8rem] capitalize font-semibold sm:text-center mt-[1.6rem]"
+                >
+                  Sáng tạo và nghiên cứu phát triển
+                </p>
+              </div>
+            </div>
+            <div class="w-1/2 lg:w-fit p-4">
+              <div class="flex flex-col h-full">
+                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                  <img
+                    src="src/imgs/Hỗ trợ và dịch vụ khách hàng.png"
+                    width=""
+                    height=""
+                    alt="Hỗ trợ và dịch vụ khách hàng"
+                  />
+                </div>
+                <p
+                  class="sm:text-[0.8rem] capitalize font-semibold sm:text-center mt-[1.6rem]"
+                >
+                  Hỗ trợ và dịch vụ khách hàng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sản phẩm -->
+      <section
+        class="bg-no-repeat bg-cover bg-center mt-20 py-11 sm:py-[4.6rem] relative after:block after:absolute after:z-[1] after:inset-0 after:bg-gradient-to-r after:from-black/70 after:from-[60%] after:to-black/30"
+        style="background-image: url(src/imgs/bg-san-pham.png)"
+      >
+        <div class="container z-[2] relative">
+          <div class="hidden sm:flex text-white items-center">
+            <div class="w-1/2 space-y-8">
+              <h4 class="uppercase text-[2rem] font-semibold">sản phẩm</h4>
+              <div class="space-y-4 content_san_pham"></div>
+              <button
+                class="group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+              >
+                <span>xEM THÊM</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="24"
+                  viewBox="0 0 26 24"
+                  fill="none"
+                  class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                >
+                  <g clip-path="url(#clip0_421_743)">
+                    <path
+                      d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_421_743">
+                      <rect
+                        width="25"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div class="w-1/2">
+              <div class="ml-5 xl:ml-40 flex flex-col btn_item_san_pham"></div>
+            </div>
+          </div>
+          <div class="flex flex-col text-white sm:hidden">
+            <div class="accordion">
+              <label
+                for="item1"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item1"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Keo Công Nghiệp</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Cung cấp các sản phẩm được sử dụng để sản xuất sơn nước. Đây
+                  là các thành phần quan trọng trong công thức của sơn nước,
+                  giúp cung cấp các tính chất như độ bám dính, độ phủ, màu sắc,
+                  bảo vệ bề mặt và khả năng chống oxy hóa. Các hóa chất này
+                  thường bao gồm nước, polymers acrylic, pigments, chất tạo
+                  màng, chất phụ gia và các chất khác để cải thiện hiệu suất và
+                  tính chất của sơn.
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="accordion">
+              <label
+                for="item2"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item2"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Hóa chất cho sơn nước</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                  architecto unde excepturi. Nesciunt animi amet at beatae
+                  laboriosam porro recusandae!
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="accordion">
+              <label
+                for="item3"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item3"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Bột màu & phẩm nhuộm</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+                  architecto ab non. Reiciendis ad, animi officia eligendi nulla
+                  unde quas.
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="accordion">
+              <label
+                for="item4"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item4"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Hóa chất cho dệt nhuộm</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta laborum corporis repellat unde suscipit tenetur illo
+                  ullam debitis veritatis autem!
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="accordion">
+              <label
+                for="item5"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item5"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Hóa chất cho in Vải</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+                  consequatur voluptas maxime optio quo cum, rem dolorum minima
+                  officia itaque!
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="accordion">
+              <label
+                for="item6"
+                class="accordion__title flex justify-between items-center"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="item6"
+                  class="appearance-none"
+                />
+                <span class="grow text-[1.2rem] font-semibold uppercase"
+                  >Hóa chất khác</span
+                >
+                <i
+                  class="fa-solid fa-angle-down transition-all duration-500 ease-in-out origin-center text-2xl"
+                ></i>
+              </label>
+              <div class="accordion__text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  expedita tempora sint excepturi quod et amet temporibus
+                  repellendus dignissimos reprehenderit.
+                </p>
+                <button
+                  class="group uppercase font-semibold flex space-x-2 items-center py-1 px-3 border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tin tức -->
+      <section class="mt-24">
+        <div class="container">
+          <div class="swiper-container">
+            <h4
+              class="text-[2rem] font-semibold uppercase text-[var(--primary)] mb-11"
+            >
+              tin tức
+            </h4>
+            <div class="swiper slide-tin-tuc">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-1.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-2.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-3.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-4.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-1.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="w-full overflow-hidden">
+                      <div
+                        class="img__pt pt-[96%] overflow-hidden hover:scale-125 transition-all duration-500 ease-in-out"
+                      >
+                        <img
+                          src="src/imgs/tin-tuc-2.png"
+                          class=""
+                          width="346"
+                          height="323"
+                          alt="anh-tin-tuc"
+                        />
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    >
+                      Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
+                    </p>
+                    <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
+                    <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
+                      >01/02/2024</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-1/3 relative mt-9 sm:mt-1 sm:absolute bottom-0 sm:bottom-auto sm:top-0 right-0 z-10"
+            >
+              <div class="flex -mx-2 items-center">
+                <div class="prev-tin-tuc px-2 hidden sm:block">
+                  <i
+                    class="fa-solid fa-chevron-left text-2xl text-[var(--primary)]"
+                  ></i>
+                </div>
+                <div class="next-tin-tuc px-2 hidden sm:block">
+                  <i
+                    class="fa-solid fa-chevron-right text-2xl text-[var(--primary)]"
+                  ></i>
+                </div>
+                <div class="grow px-2 sm:text-end text-[1.2rem] sm:text-[1rem]">
+                  <a
+                    href="#"
+                    title="Xem thêm"
+                    class="text-[var(--primary)] uppercase"
+                    >Xem thêm</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-pagination-tin-tuc translate-y-[2.5rem]"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="mt-24 bg-center bg-cover bg-no-repeat"
+      style="background-image: url(src/imgs/layout-footer.png)"
+    >
+      <div class="container pt-14 pb-8 text-[var(--primary)]">
+        <div
+          class="flex md:flex-row flex-col justify-between -mx-3 flex-wrap space-y-8 md:space-y-0"
+        >
+          <div
+            class="w-full xl:max-w-72 2xl:max-w-[20.8rem] space-y-7 px-3 md:mb-8 xl:mb-0 order-1"
+          >
+            <div class="w-fit xl:w-full img__full md:mx-auto">
+              <img
+                src="src/imgs/logo-footer.png"
+                width="415"
+                height="85"
+                alt="logo-footer"
+              />
+            </div>
+            <span
+              class="font_Roboto text-[1.2rem] md:text-base font-semibold block sm:text-center xl:text-start"
+              >CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ T.T.K</span
+            >
+          </div>
+          <div class="links_footer px-3 order-3 md:order-2">
+            <h5 class="text-[16px] mb-3 xl:mb-5 font-extrabold uppercase">
+              khám phá
+            </h5>
+            <ul>
+              <li><a href="">Trang chủ</a></li>
+              <li><a href="">Giới thiệu</a></li>
+              <li><a href="">Tư vấn sản phẩm</a></li>
+              <li><a href="">Sản phẩm</a></li>
+              <li><a href="">Tin tức</a></li>
+              <li><a href="">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="md:max-w-80 space-y-3 px-3 order-2 md:order-3">
+            <h5 class="text-[16px] mb-3 xl:mb-5 font-extrabold uppercase">
+              Liên hệ
+            </h5>
+            <div class="">
+              <p class="md:font-semibold">Địa chỉ</p>
+              <p>
+                - <span class="font-semibold">HCMC</span>: D17 Nguyễn Hồng Đào,
+                Phường 14, Quận Tân Bình, Tp Hồ Chí Minh.
+              </p>
+              <p>
+                - <span class="font-semibold">Hà Nội</span>: A1602 Rivera Tower,
+                173 Xuân Thuỷ, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội
+              </p>
+            </div>
+            <p>
+              Hotline:
+              <a
+                href="tel:+028 3842 8208"
+                class="font-semibold hover:text-white"
+                >028 3842 8208</a
+              >
+            </p>
+            <p>
+              Fax:
+              <a
+                href="tel:+028 3842 8209"
+                class="font-semibold hover:text-white"
+                >028 3842 8209</a
+              >
+            </p>
+            <p>
+              Email:
+              <a
+                href="mailto:ttk@ttkco.com"
+                class="font-semibold hover:text-white"
+                >ttk@ttkco.com</a
+              >
+            </p>
+          </div>
+          <div
+            class="flex md:flex-col space-x-3 md:space-x-0 md:space-y-3 px-3 order-4"
+          >
+            <a
+              href=""
+              title="Truy cập Fanpage"
+              class="flex space-x-2 items-center group"
+            >
+              <span
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></span>
+              <span class="group-hover:text-white hidden md:block"
+                >Truy cập Fanpage</span
+              >
+            </a>
+            <a
+              href=""
+              title="Theo dõi Twitter"
+              class="flex space-x-2 items-center group"
+            >
+              <span
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                ><i class="fa-brands fa-twitter"></i
+              ></span>
+              <span class="group-hover:text-white hidden md:block"
+                >Theo dõi Twitter</span
+              >
+            </a>
+            <a
+              href=""
+              title="Theo dõi chúng tôi"
+              class="flex space-x-2 items-center group"
+            >
+              <span
+                class="size-7 bg-white flex items-center justify-center rounded-full group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 ease-in-out"
+                ><i class="fa-brands fa-instagram"></i
+              ></span>
+              <span class="group-hover:text-white hidden md:block"
+                >Theo dõi chúng tôi</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gradient-to-r from-[#00BBF1CC]/80 to-[#0A5FABCC]/80 text-center text-white py-5 sm:text-[0.8rem]"
+      >
+        <p>
+          Coppyright © 2024 - TTK Chemical Corp. All rights reserved. Designed
+          and developed by <a href="#">Tech5S</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+--roboto: "Roboto";
+--averta: "Averta";
+--main: #363636;
+--primary: #0f62ac;
+--secondary: #c2c2c2;
+--tertiary: #696969;
+--quaternary: #EDF4F6;
+
+--bg-primary: rgba(15, 98, 172, 0.60)
+
+font_Roboto
+
+font_Averta 
+
+img__pt
+img__center
+img__zoom
+img__full
