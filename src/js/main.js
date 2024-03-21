@@ -89,53 +89,42 @@ if (document.querySelector(".slide-tin-tuc")) {
 }
 
 if (document.querySelector(".run-number")) {
-  // Hàm kiểm tra xem phần tử có trong tầm nhìn của người dùng không
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect()
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
-  }
-
-  // Lấy tất cả các phần tử có class là "count"
-  const countElements = document.querySelectorAll(".count")
-
-  // Duyệt qua mỗi phần tử
-  countElements.forEach((element) => {
-    let hasStartedCounting = false // Biến để kiểm tra xem đã bắt đầu đếm chưa
-    const countEnd = parseInt(element.getAttribute("count-end"))
+  function startCounting(element, countEnd) {
     let count = 0
 
-    // Hàm đếm số
-    function startCounting() {
-      const interval = setInterval(
-        () => {
-          element.textContent = count
-          count++
-
-          // Dừng khi đạt đến giá trị "count-end"
-          if (count > countEnd) {
-            clearInterval(interval)
-            element.textContent = countEnd
-            element.textContent += "+"
-          }
-        },
-        countEnd > 100 ? 20 : 35
-      )
+    function updateCount() {
+      if (count <= countEnd) {
+        element.textContent = count
+        count++
+        requestAnimationFrame(updateCount)
+      } else {
+        element.textContent = countEnd + "+"
+      }
     }
 
-    // Kiểm tra khi cuộn trang
-    window.addEventListener("scroll", function () {
-      if (!hasStartedCounting && isElementInViewport(element)) {
-        hasStartedCounting = true
-        startCounting()
+    requestAnimationFrame(updateCount)
+  }
+
+  function handleScroll() {
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight
+
+    document.querySelectorAll(".count").forEach((element) => {
+      if (
+        element.getBoundingClientRect().top < windowHeight &&
+        !element.hasStartedCounting
+      ) {
+        const countEnd = parseInt(element.getAttribute("count-end"), 10)
+        element.hasStartedCounting = true
+        startCounting(element, countEnd)
       }
     })
-  })
+  }
+
+  window.addEventListener("scroll", handleScroll)
+  window.addEventListener("resize", handleScroll)
+
+  // Kiểm tra tình trạng ban đầu của các phần tử khi trang được tải
 }
 
 if (document.querySelector(".banner-slide")) {
