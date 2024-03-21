@@ -1,10 +1,6 @@
 // Header fixed
 window.onscroll = function () {
   myFunctionSticky()
-  console.log(
-    window.pageYOffset,
-    document.querySelector(".run-number").offsetTop
-  )
 }
 
 var navbar = document.querySelector("header")
