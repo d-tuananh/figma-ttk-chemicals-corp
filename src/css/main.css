@@ -789,6 +789,11 @@ button,
   }
 }
 
+.menu-desktop-danh-muc {
+  height: 100%;
+  overflow-y: auto;
+}
+
 .menu-item-danh-muc,
   .menu-item-sp {
   visibility: hidden;
@@ -1316,6 +1321,11 @@ button,
   transform-origin: center;
 }
 
+.-translate-x-5 {
+  --tw-translate-x: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1338,16 +1348,6 @@ button,
 
 .translate-y-\[2\.5rem\] {
   --tw-translate-y: 2.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-3 {
-  --tw-translate-x: -0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-5 {
-  --tw-translate-x: -1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2340,6 +2340,28 @@ button,
     background-position: 100% 50%;
     /* Di chuyển sang phải cùng cách */
   }
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar-track,
+.menu-item-danh-muc::-webkit-scrollbar-track,
+.menu-item-sp::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar,
+.menu-item-danh-muc::-webkit-scrollbar,
+.menu-item-sp::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar-thumb,
+.menu-item-danh-muc::-webkit-scrollbar-thumb,
+.menu-item-sp::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }
 
 .after\:absolute::after {

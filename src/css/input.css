@@ -143,6 +143,10 @@
     @apply py-5 first:pt-0 xl:text-[1.2rem] uppercase font-bold text-black hover:text-[var(--primary)] overflow-hidden w-full;
   }
 
+  .menu-desktop-danh-muc {
+    @apply overflow-y-auto h-full;
+  }
+
   .menu-item-danh-muc,
   .menu-item-sp {
     @apply invisible opacity-0 transition-all duration-300 ease-in-out overflow-y-auto text-black;
@@ -411,4 +415,26 @@
   100% {
     background-position: 100% 50%; /* Di chuyển sang phải cùng cách */
   }
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar-track,
+.menu-item-danh-muc::-webkit-scrollbar-track,
+.menu-item-sp::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar,
+.menu-item-danh-muc::-webkit-scrollbar,
+.menu-item-sp::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+
+.menu-desktop-danh-muc::-webkit-scrollbar-thumb,
+.menu-item-danh-muc::-webkit-scrollbar-thumb,
+.menu-item-sp::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }
