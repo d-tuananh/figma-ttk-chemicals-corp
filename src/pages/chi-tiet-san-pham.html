@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
@@ -433,35 +437,87 @@
                 <p class="sm:text-[0.8rem] font-bold text-[#4E4E4E]">
                   Hình ảnh
                 </p>
-                <div class="flex -mx-4 mt-2">
+                <div class="flex -mx-4 mt-2 fancy-box-img">
                   <div class="w-1/4 px-3">
-                    <span class="img__pt pt-[95%]">
+                    <a
+                      href="../imgs/tin-tuc-1.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
                       <img
                         src="../imgs/tin-tuc-1.png"
                         alt="hinh-anh-san-pham"
                       />
-                    </span>
+                    </a>
                   </div>
                   <div class="w-1/4 px-3">
-                    <span class="img__pt pt-[95%]">
+                    <a
+                      href="../imgs/tin-tuc-2.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
+                      <img
+                        src="../imgs/tin-tuc-2.png"
+                        alt="hinh-anh-san-pham"
+                      />
+                    </a>
+                  </div>
+                  <div class="w-1/4 px-3">
+                    <a
+                      href="../imgs/tin-tuc-3.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
+                      <img
+                        src="../imgs/tin-tuc-3.png"
+                        alt="hinh-anh-san-pham"
+                      />
+                    </a>
+                  </div>
+                  <div class="w-1/4 px-3 hidden">
+                    <a
+                      href="../imgs/tin-tuc-1.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
                       <img
                         src="../imgs/tin-tuc-1.png"
                         alt="hinh-anh-san-pham"
                       />
-                    </span>
+                    </a>
                   </div>
-                  <div class="w-1/4 px-3">
-                    <span class="img__pt pt-[95%]">
+                  <div class="w-1/4 px-3 hidden">
+                    <a
+                      href="../imgs/tin-tuc-2.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
                       <img
-                        src="../imgs/tin-tuc-1.png"
+                        src="../imgs/tin-tuc-2.png"
                         alt="hinh-anh-san-pham"
                       />
-                    </span>
+                    </a>
+                  </div>
+                  <div class="w-1/4 px-3 hidden">
+                    <a
+                      href="../imgs/tin-tuc-3.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
+                      <img
+                        src="../imgs/tin-tuc-3.png"
+                        alt="hinh-anh-san-pham"
+                      />
+                    </a>
                   </div>
                   <div class="w-1/4 px-3">
-                    <span class="img__pt pt-[95%]">
+                    <a
+                      href="../imgs/tin-tuc-4.png"
+                      data-fancybox="gallery-a"
+                      class="img__pt pt-[95%] img__"
+                    >
                       <img
-                        src="../imgs/tin-tuc-1.png"
+                        src="../imgs/tin-tuc-4.png"
                         alt="hinh-anh-san-pham"
                       />
                       <span
@@ -473,7 +529,7 @@
                           4+
                         </p>
                       </span>
-                    </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -682,6 +738,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="../js/main.js" defer></script>
   </body>

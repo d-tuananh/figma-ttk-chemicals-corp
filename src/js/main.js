@@ -304,3 +304,9 @@ all_menu_item_danh_muc.forEach((i) => {
     })
   })
 })
+
+if (document.querySelector(".fancy-box-img")) {
+  Fancybox.bind('[data-fancybox="gallery-a"]', {
+    // Custom options for the first gallery
+  })
+}
