@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./src/css/animation.css" />
     <link rel="stylesheet" href="src/css/main.css" />
   </head>
   <body>
@@ -547,7 +548,7 @@
       <section class="relative mt-[4.8rem]">
         <div class="container">
           <div class="flex flex-wrap">
-            <div class="md:w-1/2 w-full">
+            <div class="md:w-1/2 w-full wow fadeInLeft">
               <h4
                 class="text-[var(--primary)] text-[2rem] uppercase font-semibold"
               >
@@ -593,7 +594,7 @@
                 </svg>
               </button>
             </div>
-            <div class="md:w-1/2 w-full md:pl-14 run-number">
+            <div class="md:w-1/2 w-full md:pl-14 run-number wow fadeInRight">
               <div class="flex flex-wrap -mx-3 relative module-statis">
                 <div class="w-1/2 px-3">
                   <div class="w-full py-6 text-center">
@@ -682,12 +683,12 @@
       <section class="mt-16">
         <div class="container">
           <h4
-            class="text-[var(--primary)] text-[2rem] uppercase font-semibold mb-6 lg:mb-16"
+            class="text-[var(--primary)] text-[2rem] uppercase font-semibold mb-6 lg:mb-16 wow fadeIn"
           >
             Chất lượng & Sáng tạo
           </h4>
           <div class="flex flex-wrap justify-between -mx-4">
-            <div class="w-1/2 lg:w-1/4 p-4">
+            <div class="w-1/2 lg:w-1/4 p-4 wow fadeInUpBig">
               <div class="flex flex-col h-full">
                 <div class="sm:self-center size-28 img__contain">
                   <img
@@ -704,7 +705,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-1/4 p-4">
+            <div class="w-1/2 lg:w-1/4 p-4 wow fadeInUpBig">
               <div class="flex flex-col h-full">
                 <div class="sm:self-center size-28 img__contain">
                   <img
@@ -721,7 +722,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-1/4 p-4">
+            <div class="w-1/2 lg:w-1/4 p-4 wow fadeInUpBig">
               <div class="flex flex-col h-full">
                 <div class="sm:self-center size-28 img__contain">
                   <img
@@ -738,7 +739,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-1/4 p-4">
+            <div class="w-1/2 lg:w-1/4 p-4 wow fadeInUpBig">
               <div class="flex flex-col h-full">
                 <div class="sm:self-center size-28 img__contain">
                   <img
@@ -767,7 +768,7 @@
         <div class="container z-[2] relative">
           <!-- Desktop -->
           <div class="hidden md:flex text-white items-center">
-            <div class="w-1/2 space-y-8">
+            <div class="w-1/2 space-y-8 wow fadeInLeft">
               <h4 class="uppercase text-[2rem] font-semibold">sản phẩm</h4>
               <div class="space-y-4 content_san_pham hidden" data-content="1">
                 <p
@@ -1031,7 +1032,7 @@
                 </a>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-1/2 wow fadeInRight">
               <div class="ml-5 xl:ml-40 flex flex-col btn_item_san_pham">
                 <a
                   href="javascript:void(0)"
@@ -1430,11 +1431,11 @@
         <div class="container">
           <div class="swiper-container">
             <h4
-              class="text-[2rem] font-semibold uppercase text-[var(--primary)] mb-11"
+              class="text-[2rem] font-semibold uppercase text-[var(--primary)] mb-11 wow fadeInTopLeft"
             >
               tin tức
             </h4>
-            <div class="swiper slide-tin-tuc">
+            <div class="swiper slide-tin-tuc wow fadeInUp">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div>
@@ -1657,7 +1658,7 @@
           class="flex md:flex-row flex-col justify-between -mx-3 flex-wrap space-y-8 md:space-y-0"
         >
           <div
-            class="w-full xl:max-w-72 2xl:max-w-[20.8rem] space-y-7 px-3 md:mb-8 xl:mb-0 order-1"
+            class="w-full xl:max-w-72 2xl:max-w-[20.8rem] space-y-7 px-3 md:mb-8 xl:mb-0 order-1 wow fadeInLeft"
           >
             <a
               href="./index.html"
@@ -1676,7 +1677,7 @@
               >CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ T.T.K</span
             >
           </div>
-          <div class="links_footer px-3 order-3 md:order-2">
+          <div class="links_footer px-3 order-3 md:order-2 wow fadeInUp">
             <h5 class="text-[16px] mb-3 xl:mb-5 font-extrabold uppercase">
               khám phá
             </h5>
@@ -1691,7 +1692,9 @@
               <li><a href="./src/pages/lien-he.html">Liên hệ</a></li>
             </ul>
           </div>
-          <div class="md:max-w-80 space-y-3 px-3 order-2 md:order-3">
+          <div
+            class="md:max-w-80 space-y-3 px-3 order-2 md:order-3 wow fadeInUp"
+          >
             <h5 class="text-[16px] mb-3 xl:mb-5 font-extrabold uppercase">
               Liên hệ
             </h5>
@@ -1732,7 +1735,7 @@
             </p>
           </div>
           <div
-            class="flex md:flex-col space-x-3 md:space-x-0 md:space-y-3 px-3 order-4"
+            class="flex md:flex-col space-x-3 md:space-x-0 md:space-y-3 px-3 order-4 wow fadeInRight"
           >
             <a
               href=""
@@ -1789,6 +1792,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./src/js/wow.min.js"></script>
 
     <script src="src/js/main.js"></script>
   </body>

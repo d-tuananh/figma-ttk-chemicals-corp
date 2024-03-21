@@ -299,3 +299,9 @@ if (document.querySelector(".fancy-box-img")) {
     // Custom options for the first gallery
   })
 }
+
+var width_ = window.innerWidth
+if (width_ > 1023) {
+  var wow = new WOW()
+  wow.init()
+}
