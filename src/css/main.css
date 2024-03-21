@@ -2484,6 +2484,10 @@ button,
     margin-top: 1.75rem;
   }
 
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .sm\:block {
     display: block;
   }
