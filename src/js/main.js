@@ -249,8 +249,10 @@ all_danh_muc_menu.forEach((i) => {
     })
     all_danh_muc_menu.forEach((e) => {
       e.classList.remove("text-active")
+      e.querySelector("a i.fa-chevron-right").classList.remove("-translate-x-5")
     })
     i.classList.add("text-active")
+    i.querySelector("a i.fa-chevron-right").classList.add("-translate-x-5")
     all_menu_item_danh_muc.forEach((z) => {
       if (
         z.getAttribute("category") ===
