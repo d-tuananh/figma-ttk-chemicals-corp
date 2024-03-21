@@ -92,13 +92,14 @@ if (document.querySelector(".run-number")) {
   function startCounting(element, countEnd) {
     let count = 0
 
-    function updateCount() {
+    const updateCount = () => {
       if (count <= countEnd) {
-        element.textContent = count
         count++
+        element.textContent = count
         requestAnimationFrame(updateCount)
       } else {
-        element.textContent = countEnd + "+"
+        element.textContent = `${countEnd}+`
+        cancelAnimationFrame(updateCount)
       }
     }
 
@@ -106,16 +107,15 @@ if (document.querySelector(".run-number")) {
   }
 
   function handleScroll() {
-    const windowHeight =
-      window.innerHeight || document.documentElement.clientHeight
+    const windowHeight = window.innerHeight
 
-    document.querySelectorAll(".count").forEach((element) => {
-      if (
-        element.getBoundingClientRect().top < windowHeight &&
-        !element.hasStartedCounting
-      ) {
-        const countEnd = parseInt(element.getAttribute("count-end"), 10)
+    ;[...document.querySelectorAll(".count")].forEach((element) => {
+      // Sử dụng destructuring để lấy thuộc tính top
+      const { top } = element.getBoundingClientRect()
+
+      if (top < windowHeight && !element.hasStartedCounting) {
         element.hasStartedCounting = true
+        const countEnd = parseInt(element.getAttribute("count-end"), 10)
         startCounting(element, countEnd)
       }
     })
@@ -123,8 +123,6 @@ if (document.querySelector(".run-number")) {
 
   window.addEventListener("scroll", handleScroll)
   window.addEventListener("resize", handleScroll)
-
-  // Kiểm tra tình trạng ban đầu của các phần tử khi trang được tải
 }
 
 if (document.querySelector(".banner-slide")) {
