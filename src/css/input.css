@@ -58,11 +58,6 @@
   --secondary: #c2c2c2;
   --tertiary: #696969;
   --quaternary: #edf4f6;
-  /*--quinary: #0f62ac;
-  --senary: #0f62ac;
-  --septenary: #0f62ac;
-  --octonary: #0f62ac;
-  --nonary: #0f62ac; */
   --bg-primary: rgba(15, 98, 172, 0.6);
 }
 
@@ -188,10 +183,22 @@
   .menu-moblie .container > ul > li:hover i {
     @apply rotate-90;
   }
+
+  .module-statis {
+    @apply after:block after:absolute after:w-[1px] after:h-[90%] md:after:h-2/3 after:left-1/2 after:top-1/2 after:-translate-y-1/2 after:bg-[#D4D4D4] before:block before:absolute before:h-[1px] before:w-[90%] md:before:w-1/2 before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:bg-[#D4D4D4];
+  }
+
+  .box-bg {
+    @apply before:z-[5] before:text-[2.4rem] before:absolute before:inset-0 before:bg-black/60 before:flex before:items-center before:justify-center before:text-white;
+  }
 }
 
 .menu-moblie .container > ul > li:hover .menu-moblie-item {
   max-height: 15rem;
+}
+
+.fancy-box-item a::before {
+  content: var(--before-content);
 }
 
 .fixed-header {
@@ -283,6 +290,11 @@
 .img__:hover::after {
   -webkit-animation: shine 0.75s;
   animation: shine 0.75s;
+}
+
+.img__contain > img {
+  height: 100%;
+  object-fit: contain;
 }
 
 @keyframes shine {
@@ -384,5 +396,22 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.sp_active:after {
+  background-size: 150% 150%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

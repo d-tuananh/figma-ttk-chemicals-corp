@@ -30,51 +30,32 @@ btnMenu.forEach((btn) => {
 
 // San pham
 if (document.querySelector(".btn_item_san_pham")) {
-  const btn_item_content = document.querySelector(".btn_item_san_pham")
-  const content_san_pham = document.querySelector(".content_san_pham")
-  let name_item_content = [
-    "Keo Công Nghiệp",
-    "Hóa chất cho sơn nước",
-    "Bột màu & phẩm nhuộm",
-    "Hóa chất cho dệt nhuộm",
-    "Hóa chất cho in Vải",
-    "Hóa chất khác",
-  ]
-
-  let loremIpsums = [
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, minus? Sint iste impedit cum! Pariatur quidem, explicabo deserunt unde sint rerum. Qui distinctio, vitae, doloremque quo vero error adipisci soluta maxime eius aliquid illo, et perspiciatis accusantium possimus amet consectetur?",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque odit commodi voluptas dolorem ipsum molestias, accusantium aspernatur veniam, dolor temporibus, unde consequatur consequuntur itaque? Eveniet, beatae natus culpa cum fugit enim, minus magnam earum incidunt repudiandae voluptatem inventore dolorem tempore.",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium qui, cum asperiores illo quaerat amet esse! Quibusdam eius quasi cupiditate reprehenderit deserunt qui accusamus veniam, voluptatem quos sapiente atque a? Voluptatibus omnis atque, maxime esse incidunt eligendi tempore earum blanditiis.",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, voluptate error odit repudiandae nulla quasi aperiam atque quisquam repellat sint quam iusto eos a aliquid nesciunt! Ipsa expedita perspiciatis natus eveniet atque, architecto, odio esse explicabo optio, nisi blanditiis alias?",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste saepe laboriosam non, ex neque magni quidem minus ullam. Unde deserunt aspernatur commodi tenetur, iure veniam excepturi doloribus dignissimos ipsam voluptates nihil deleniti nobis nesciunt voluptatem repellat in sint labore.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quod. Consequuntur ut commodi, quo praesentium non nostrum id ipsum earum doloribus cupiditate et laborum quaerat sapiente cumque repellat laudantium fugiat alias iste magnam, harum maiores natus accusantium. Dolorum, facilis quidem!",
-  ]
-
-  name_item_content.forEach((i, index) => {
-    btn_item_content.innerHTML += `<span onclick='handleClickItemContent(${index})'>${i}</span>`
+  const all_btn_item_content = document.querySelectorAll(
+    ".btn_item_san_pham button[data-content]"
+  )
+  const all_content_san_pham = document.querySelectorAll(
+    ".content_san_pham[data-content]"
+  )
+  const bg_content_san_pham = document.querySelector(
+    "section[data-bg-san-pham]"
+  )
+  all_btn_item_content.forEach((i) => {
+    i.addEventListener("click", () => {
+      all_btn_item_content.forEach((e) => e.classList.remove("sp_active"))
+      i.classList.add("sp_active")
+      all_content_san_pham.forEach((z) => {
+        z.classList.add("hidden")
+        if (z.getAttribute("data-content") === i.getAttribute("data-content")) {
+          z.classList.remove("hidden")
+          bg_content_san_pham.style.backgroundImage = `url(${i.getAttribute(
+            "data-bg"
+          )})`
+        }
+      })
+    })
   })
 
-  let form_content = (index) => {
-    return `
-  <p class="text-[1.4rem] font-semibold uppercase">
-    ${name_item_content[index]}
-  </p>
-  <span class="block w-3/5 h-[0.5px] bg-white"></span>
-  <p>
-      ${loremIpsums[index]}
-  </p>
-`
-  }
-
-  function handleClickItemContent(index) {
-    btn_item_content
-      .querySelectorAll("span")
-      .forEach((i) => i.classList.remove("sp_active"))
-    btn_item_content.querySelectorAll("span")[index].classList.add("sp_active")
-    content_san_pham.innerHTML = form_content(index)
-  }
-
-  handleClickItemContent(1)
+  all_btn_item_content[1].click()
 }
 
 // Slide tin tuc
@@ -306,6 +287,25 @@ all_menu_item_danh_muc.forEach((i) => {
 })
 
 if (document.querySelector(".fancy-box-img")) {
+  const all_item_fancy_box = document.querySelectorAll(".fancy-box-item")
+
+  all_item_fancy_box.forEach((item, index) => {
+    // Hide elements if their index is greater than 3
+    if (index > 3) {
+      item.classList.add("hidden")
+    }
+  })
+
+  if (all_item_fancy_box.length > 4) {
+    const fourthAnchor = all_item_fancy_box[3].querySelector("a")
+    fourthAnchor.classList.add("box-bg")
+    fourthAnchor.style.setProperty(
+      "--before-content",
+      `'${all_item_fancy_box.length - 3}+'`
+    )
+  }
+
+  // Bind Fancybox to elements with data-fancybox="gallery-a"
   Fancybox.bind('[data-fancybox="gallery-a"]', {
     // Custom options for the first gallery
   })

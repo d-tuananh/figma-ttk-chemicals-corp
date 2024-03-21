@@ -546,8 +546,8 @@
       <!-- Gioi thieu -->
       <section class="relative mt-[4.8rem]">
         <div class="container">
-          <div class="flex flex-col sm:flex-row">
-            <div class="sm:w-1/2 w-full">
+          <div class="flex flex-wrap">
+            <div class="md:w-1/2 w-full">
               <h4
                 class="text-[var(--primary)] text-[2rem] uppercase font-semibold"
               >
@@ -564,7 +564,7 @@
                 Nam.
               </p>
               <button
-                class="hidden group text-[var(--primary)] text-[0.8rem] uppercase font-semibold sm:flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
+                class="hidden group text-[var(--primary)] text-[0.8rem] uppercase font-semibold md:flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
               >
                 <span>Khám phá ngay</span>
                 <svg
@@ -593,66 +593,60 @@
                 </svg>
               </button>
             </div>
-            <div class="sm:w-1/2 w-full sm:ml-14 run-number">
-              <div class="sm:-mx-7 flex flex-wrap relative">
-                <div
-                  class="absolute w-full sm:w-1/2 h-[1px] bg-[#D4D4D4] bottom-1/2 left-1/2 -translate-x-1/2"
-                ></div>
-                <div
-                  class="absolute w-[1px] h-full sm:h-3/4 bg-[#D4D4D4] bottom-1/2 left-1/2 translate-y-1/2"
-                ></div>
-                <div
-                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
-                >
-                  <span
-                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
-                    count-end="36+"
-                    >0
-                  </span>
-                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
-                    Năm thành lập
-                  </p>
+            <div class="md:w-1/2 w-full md:pl-14 run-number">
+              <div class="flex flex-wrap -mx-3 relative module-statis">
+                <div class="w-1/2 px-3">
+                  <div class="w-full py-6 text-center">
+                    <span
+                      class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                      count-end="36+"
+                      >0
+                    </span>
+                    <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                      Năm thành lập
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
-                >
-                  <span
-                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
-                    count-end="40+"
-                    >0
-                  </span>
-                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
-                    Nhãn hàng hợp tác
-                  </p>
+                <div class="w-1/2 px-3">
+                  <div class="w-full py-6 text-center">
+                    <span
+                      class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                      count-end="40+"
+                      >0
+                    </span>
+                    <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                      Nhãn hàng hợp tác
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
-                >
-                  <span
-                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
-                    count-end="150+"
-                    >0
-                  </span>
-                  <p class="text-[1.1rem] sm:text-[0.8rem] font-semibold">
-                    Nhân viên
-                  </p>
+                <div class="w-1/2 px-3">
+                  <div class="w-full py-6 text-center">
+                    <span
+                      class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                      count-end="150+"
+                      >0
+                    </span>
+                    <p class="text-[1.1rem] sm:text-[0.8rem] font-semibold">
+                      Nhân viên
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="py-5 odd:pl-0 even:pl-5 space-x-2 sm:p-7 w-1/2 sm:text-center"
-                >
-                  <span
-                    class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
-                    count-end="10+"
-                    >0
-                  </span>
-                  <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
-                    Giải thưởng
-                  </p>
+                <div class="w-1/2 px-3">
+                  <div class="w-full py-6 text-center">
+                    <span
+                      class="count text-transparent bg-clip-text bg-gradient-to-bl from-[#00BBF1CC] to-[#0A5FABCC] font_Roboto text-[2.85rem] sm:text-[4.25rem] font-semibold"
+                      count-end="10+"
+                      >0
+                    </span>
+                    <p class="text-[1.1rem] lg:text-[0.8rem] font-semibold">
+                      Giải thưởng
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="w-full mt-9">
                 <button
-                  class="w-fit mx-auto group text-[var(--primary)] uppercase font-semibold sm:hidden flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
+                  class="w-fit mx-auto group text-[var(--primary)] uppercase font-semibold md:hidden flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-[var(--primary)] rounded-full hover:bg-[var(--primary)] hover:text-white transition-all duration-500 ease-in-out"
                 >
                   <p>Khám phá ngay</p>
                   <svg
@@ -680,7 +674,7 @@
           </div>
         </div>
         <div
-          class="absolute w-1/3 h-20 bg-[#EFEFEF] left-0 bottom-0 -translate-y-1/4 lg:-translate-y-1/2 hidden sm:block"
+          class="absolute w-1/3 h-16 lg:h-20 bg-[#EFEFEF] left-0 bottom-0 translate-y-1/2 md:translate-y-0 xl:-translate-y-1/2 hidden md:block"
         ></div>
       </section>
 
@@ -693,9 +687,9 @@
             Chất lượng & Sáng tạo
           </h4>
           <div class="flex flex-wrap justify-between -mx-4">
-            <div class="w-1/2 lg:w-fit p-4">
+            <div class="w-1/2 lg:w-1/4 p-4">
               <div class="flex flex-col h-full">
-                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                <div class="sm:self-center size-28 img__contain">
                   <img
                     src="src/imgs/Tính bền vững .png"
                     width=""
@@ -710,9 +704,9 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-fit p-4">
+            <div class="w-1/2 lg:w-1/4 p-4">
               <div class="flex flex-col h-full">
-                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                <div class="sm:self-center size-28 img__contain">
                   <img
                     src="src/imgs/Chất lượng và an toàn.png"
                     width=""
@@ -727,9 +721,9 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-fit p-4">
+            <div class="w-1/2 lg:w-1/4 p-4">
               <div class="flex flex-col h-full">
-                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                <div class="sm:self-center size-28 img__contain">
                   <img
                     src="src/imgs/Sáng tạo và nghiên cứu phát triển.png"
                     width=""
@@ -744,9 +738,9 @@
                 </p>
               </div>
             </div>
-            <div class="w-1/2 lg:w-fit p-4">
+            <div class="w-1/2 lg:w-1/4 p-4">
               <div class="flex flex-col h-full">
-                <div class="sm:self-center w-[35%] sm:w-fit grow">
+                <div class="sm:self-center size-28 img__contain">
                   <img
                     src="src/imgs/Hỗ trợ và dịch vụ khách hàng.png"
                     width=""
@@ -768,48 +762,325 @@
       <!-- sản phẩm -->
       <section
         class="bg-no-repeat bg-cover bg-center mt-20 py-11 sm:py-[4.6rem] relative after:block after:absolute after:z-[1] after:inset-0 after:bg-gradient-to-r after:from-black/70 after:from-[60%] after:to-black/30"
-        style="background-image: url(src/imgs/bg-san-pham.png)"
+        data-bg-san-pham
       >
         <div class="container z-[2] relative">
-          <div class="hidden sm:flex text-white items-center">
+          <!-- Desktop -->
+          <div class="hidden md:flex text-white items-center">
             <div class="w-1/2 space-y-8">
               <h4 class="uppercase text-[2rem] font-semibold">sản phẩm</h4>
-              <div class="space-y-4 content_san_pham"></div>
-              <button
-                class="group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
-              >
-                <span>xEM THÊM</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="24"
-                  viewBox="0 0 26 24"
-                  fill="none"
-                  class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+              <div class="space-y-4 content_san_pham hidden" data-content="1">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
                 >
-                  <g clip-path="url(#clip0_421_743)">
-                    <path
-                      d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_421_743">
-                      <rect
-                        width="25"
-                        height="24"
-                        fill="white"
-                        transform="translate(0.5)"
+                  Keo Công Nghiệp
+                </p>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fugiat nemo quia exercitationem saepe quas hic, nulla atque ut
+                  placeat magni nisi molestias aperiam, velit dolorum iure esse
+                  ea tenetur animi!
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
                       />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="space-y-4 content_san_pham hidden" data-content="2">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
+                >
+                  Hóa chất cho sơn nước
+                </p>
+                <span
+                  >Cung cấp các sản phẩm được sử dụng để sản xuất sơn nước. Đây
+                  là các thành phần quan trọng trong công thức của sơn nước,
+                  giúp cung cấp các tính chất như độ bám dính, độ phủ, màu sắc,
+                  bảo vệ bề mặt và khả năng chống oxy hóa. Các hóa chất này
+                  thường bao gồm nước, polymers acrylic, pigments, chất tạo
+                  màng, chất phụ gia và các chất khác để cải thiện hiệu suất và
+                  tính chất của sơn.
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="space-y-4 content_san_pham hidden" data-content="3">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
+                >
+                  Bột màu & phẩm nhuộm
+                </p>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Unde debitis alias delectus ducimus iure impedit, ex quia
+                  neque aliquam nihil fuga sit corrupti a quisquam molestias
+                  praesentium tempore expedita. Porro?
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="space-y-4 content_san_pham hidden" data-content="4">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
+                >
+                  Hóa chất cho dệt nhuộm
+                </p>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora numquam placeat tenetur vel accusantium voluptatibus
+                  a, aspernatur sint autem earum dolore animi, vero repellat
+                  velit eligendi provident quas, laudantium ea!
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="space-y-4 content_san_pham hidden" data-content="5">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
+                >
+                  Hóa chất cho in Vải
+                </p>
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Unde nam repellat, architecto illo praesentium necessitatibus
+                  voluptatibus quibusdam, beatae nostrum iste ipsam odio totam
+                  incidunt excepturi ipsa eveniet, autem magnam deleniti!
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="space-y-4 content_san_pham hidden" data-content="6">
+                <p
+                  class="pb-4 mb-4 border-b w-fit text-[1.4rem] uppercase font-semibold border-solid border-white"
+                >
+                  Hóa chất khác
+                </p>
+                <span
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat ipsum qui eos est sequi ipsa doloremque consequuntur
+                  sunt autem, rem veritatis facere saepe voluptatem pariatur,
+                  dolores voluptas assumenda nihil vero!
+                </span>
+                <a
+                  href="./src/pages/san-pham.html"
+                  class="w-fit group text-[0.8rem] uppercase font-semibold flex space-x-2 items-center py-[0.6rem] px-[0.8rem] border border-solid border-white rounded-full hover:border-transparent hover:bg-white hover:text-[var(--primary)] transition-all duration-500 ease-in-out"
+                >
+                  <span>xEM THÊM</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="24"
+                    viewBox="0 0 26 24"
+                    fill="none"
+                    class="fill-white group-hover:fill-[var(--primary)] group-hover:translate-x-2 transition-all duration-500 ease-in-out"
+                  >
+                    <g clip-path="url(#clip0_421_743)">
+                      <path
+                        d="M20.067 17.5652L25.2432 12.596C25.4077 12.4378 25.5 12.2234 25.5 11.9998C25.5 11.7763 25.4077 11.5619 25.2432 11.4036L20.067 6.43445C19.9522 6.32465 19.7968 6.26305 19.6348 6.26318C19.4727 6.26331 19.3174 6.32516 19.2028 6.43514C19.0883 6.54513 19.0238 6.69426 19.0237 6.8498C19.0236 7.00534 19.0877 7.15458 19.2021 7.26475L23.523 11.4127H1.11157C0.949373 11.4127 0.793817 11.4746 0.679125 11.5847C0.564433 11.6948 0.5 11.8441 0.5 11.9998C0.5 12.1555 0.564433 12.3049 0.679125 12.415C0.793817 12.5251 0.949373 12.5869 1.11157 12.5869H23.523L19.2021 16.7349C19.0877 16.8451 19.0236 16.9943 19.0237 17.1498C19.0238 17.3054 19.0883 17.4545 19.2028 17.5645C19.3174 17.6745 19.4727 17.7363 19.6348 17.7365C19.7968 17.7366 19.9522 17.675 20.067 17.5652Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_421_743">
+                        <rect
+                          width="25"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="w-1/2">
-              <div class="ml-5 xl:ml-40 flex flex-col btn_item_san_pham"></div>
+              <div class="ml-5 xl:ml-40 flex flex-col btn_item_san_pham">
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="1"
+                  data-bg="src/imgs/keocongnghiep.jpg"
+                >
+                  Keo Công Nghiệp
+                </button>
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="2"
+                  data-bg="src/imgs/bg-san-pham.png"
+                >
+                  Hóa chất cho sơn nước
+                </button>
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="3"
+                  data-bg="src/imgs/keocongnghiep.jpg"
+                >
+                  Bột màu & phẩm nhuộm
+                </button>
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="4"
+                  data-bg="src/imgs/bg-san-pham.png"
+                >
+                  Hóa chất cho dệt nhuộm
+                </button>
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="5"
+                  data-bg="src/imgs/keocongnghiep.jpg"
+                >
+                  Hóa chất cho in Vải
+                </button>
+                <button
+                  class="pb-8 mb-8 last:mb-0 border-b border-solid border-white text-start uppercase font-semibold text-[1.2rem] leading-10"
+                  data-content="6"
+                  data-bg="src/imgs/bg-san-pham.png"
+                >
+                  Hóa chất khác
+                </button>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col text-white sm:hidden">
+
+          <!-- Moblie -->
+          <div class="flex flex-col text-white md:hidden">
             <div class="accordion">
               <label
                 for="item1"
@@ -1162,7 +1433,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1172,13 +1445,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
@@ -1188,7 +1463,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1198,13 +1475,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
@@ -1214,7 +1493,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1224,13 +1505,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
@@ -1240,7 +1523,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1250,13 +1535,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
@@ -1266,7 +1553,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1276,13 +1565,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
@@ -1292,7 +1583,9 @@
                 <div class="swiper-slide">
                   <div>
                     <div class="w-full overflow-hidden">
-                      <div
+                      <a
+                        href="./src/pages/chi-tiet-tin-tuc.html"
+                        title="chi-tiet-tin-tuc"
                         class="img__pt pt-[96%] img__ transition-all duration-500 ease-in-out"
                       >
                         <img
@@ -1302,13 +1595,15 @@
                           height="323"
                           alt="anh-tin-tuc"
                         />
-                      </div>
+                      </a>
                     </div>
-                    <p
-                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5"
+                    <a
+                      href="./src/pages/chi-tiet-tin-tuc.html"
+                      title="chi-tiet-tin-tuc"
+                      class="font-bold uppercase text-[1.2rem] sm:text-[0.9rem] my-5 hover:text-[var(--primary)] block"
                     >
                       Thay thế thuốc nhuộm hóa học bằng thuốc nhuộm tự nhiên
-                    </p>
+                    </a>
                     <span class="block w-full h-[1px] bg-[#D4D4D4]"></span>
                     <span class="block mt-3 sm:text-[0.9rem] text-[#858585]"
                       >01/02/2024</span
