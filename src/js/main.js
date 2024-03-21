@@ -1,6 +1,10 @@
 // Header fixed
 window.onscroll = function () {
   myFunctionSticky()
+  console.log(
+    window.pageYOffset,
+    document.querySelector(".run-number").offsetTop
+  )
 }
 
 var navbar = document.querySelector("header")
@@ -31,7 +35,7 @@ btnMenu.forEach((btn) => {
 // San pham
 if (document.querySelector(".btn_item_san_pham")) {
   const all_btn_item_content = document.querySelectorAll(
-    ".btn_item_san_pham button[data-content]"
+    ".btn_item_san_pham a[data-content]"
   )
   const all_content_san_pham = document.querySelectorAll(
     ".content_san_pham[data-content]"
