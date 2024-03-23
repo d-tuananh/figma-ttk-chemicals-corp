@@ -215,6 +215,9 @@ var MAIN = {
       btn_toggle_menu_sp.forEach((i) => {
         i.addEventListener("click", () => {
           menu_page_sp_moblie.classList.toggle("-translate-x-[110%]")
+          menu_page_sp_moblie.classList.contains("-translate-x-[110%]")
+            ? (document.body.style.overflow = "auto")
+            : (document.body.style.overflow = "hidden")
         })
       })
     }
