@@ -70,7 +70,7 @@
   li,
   ul,
   i {
-    @apply transition-all duration-500 ease-in-out;
+    @apply transition-all duration-300 ease-in-out;
   }
 }
 
@@ -140,7 +140,7 @@
   }
 
   .menu-desktop-danh-muc ul li {
-    @apply py-5 first:pt-0 xl:text-[1.2rem] uppercase font-bold text-black hover:text-[var(--primary)] overflow-hidden w-full;
+    @apply pr-5 py-5 first:pt-0 2xl:text-[1.2rem] uppercase font-bold text-black hover:text-[var(--primary)] overflow-hidden w-full;
   }
 
   .menu-desktop-danh-muc {
@@ -149,23 +149,25 @@
 
   .menu-item-danh-muc,
   .menu-item-sp {
-    @apply invisible opacity-0 transition-all duration-300 ease-in-out overflow-y-auto text-black;
+    @apply overflow-y-auto text-black;
   }
 
   .menu-item-danh-muc ul li a {
-    @apply block py-6 px-2  uppercase font-semibold ml-5;
+    @apply block py-6 px-2  uppercase font-semibold ml-5 text-[0.9rem] 2xl:text-[1rem];
   }
 
   .menu-item-sp ul li {
-    @apply pb-5;
+    @apply pb-5 hover:underline hover:underline-offset-4;
   }
 
-  .active-menu {
-    @apply visible opacity-100;
+  .menu-item-sp ul li a,
+  .menu-item-sp p,
+  .menu-item-sp span {
+    @apply text-[0.9rem] 2xl:text-[1rem];
   }
 
   .active-bg-menu {
-    @apply bg-[var(--primary)] text-white;
+    @apply bg-[#075DA9] text-white;
   }
 
   .menu-moblie .container > ul > li > a {
@@ -193,8 +195,82 @@
   }
 
   .box-bg {
-    @apply before:z-[5] before:text-[2.4rem] before:absolute before:inset-0 before:bg-black/60 before:flex before:items-center before:justify-center before:text-white;
+    @apply before:z-[5] lg:before:text-[2.4rem] before:absolute before:inset-0 before:bg-black/60 before:flex before:items-center before:justify-center before:text-white;
   }
+
+  .menu-san-pham-moblie .menu-item-san-pham-moblie {
+    @apply ml-4;
+  }
+
+  .menu-san-pham-moblie > ul {
+    @apply overflow-y-auto h-screen;
+  }
+
+  .menu-san-pham-moblie .menu-item-san-pham-moblie ul li a {
+    @apply py-1 hover:text-[var(--primary)] transition-all duration-300 ease-in-out;
+  }
+}
+
+.banner-slide {
+  position: relative;
+}
+
+.banner-slide .swiper-slide:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.16) 42.08%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.banner-slide .swiper-slide:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.16) 42.08%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.bg-linear-banner {
+  position: relative;
+}
+
+.bg-linear-banner:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.menu-item-sp {
+  background: linear-gradient(270deg, #00bbf1 0%, #075da9 100%);
 }
 
 .menu-moblie .container > ul > li:hover .menu-moblie-item {
@@ -208,10 +284,10 @@
 .fixed-header {
   position: fixed;
   width: 100%;
-  animation: up 0.3s 0s linear;
+  animation: up 0.45s 0s linear;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 55;
 }
 
 .text-active {
@@ -332,10 +408,10 @@
 .icon_bars span {
   display: block;
   position: absolute;
-  height: 0.15rem; /* Kích thước chiều cao của các thanh */
+  height: 0.2rem; /* Kích thước chiều cao của các thanh */
   width: 100%;
   background: black;
-  transition: all 0.25s ease; /* Hiệu ứng chuyển động */
+  transition: all 0.4s ease-in-out; /* Hiệu ứng chuyển động */
 }
 
 .icon_bars:hover span {
@@ -437,4 +513,24 @@ body::-webkit-scrollbar {
 .menu-item-sp::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
   background: var(--primary);
+}
+
+.layout_tam_nhin_su_menh {
+  position: relative;
+}
+
+.layout_tam_nhin_su_menh:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
 }

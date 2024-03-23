@@ -6,6 +6,7 @@
 --tertiary: #696969;
 --quaternary: #EDF4F6;
 
+
 --bg-primary: rgba(15, 98, 172, 0.60)
 
 font_Roboto
