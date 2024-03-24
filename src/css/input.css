@@ -170,26 +170,6 @@
     @apply bg-[#075DA9] text-white;
   }
 
-  .menu-moblie .container > ul > li > a {
-    @apply py-2 block capitalize text-[16px] hover:text-[var(--primary)] font-bold;
-  }
-
-  .menu-moblie .container > ul > li {
-    @apply border-b border-solid border-slate-200;
-  }
-
-  .menu-moblie-item {
-    @apply max-h-0 overflow-hidden duration-500 transition-all ease-in-out ml-4;
-  }
-
-  .menu-moblie-item li a {
-    @apply pb-2 block hover:text-[var(--primary)] font-semibold capitalize;
-  }
-
-  .menu-moblie .container > ul > li:hover i {
-    @apply rotate-90;
-  }
-
   .module-statis {
     @apply after:block after:absolute after:w-[1px] after:h-[90%] md:after:h-2/3 after:left-1/2 after:top-1/2 after:-translate-y-1/2 after:bg-[#D4D4D4] before:block before:absolute before:h-[1px] before:w-[90%] md:before:w-1/2 before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:bg-[#D4D4D4];
   }
@@ -208,6 +188,30 @@
 
   .menu-san-pham-moblie .menu-item-san-pham-moblie ul li a {
     @apply py-1 hover:text-[var(--primary)] transition-all duration-300 ease-in-out;
+  }
+
+  .menu-moblie > ul > li {
+    @apply border-b border-solid border-[var(--secondary)];
+  }
+
+  .menu-moblie > ul > li > span > a {
+    @apply py-3 text-xl uppercase font-bold;
+  }
+
+  .menu-moblie .menu-item-moblie li a {
+    @apply py-1 block text-lg font-semibold uppercase hover:underline hover:underline-offset-2;
+  }
+
+  .menu-moblie .menu-item-moblie {
+    @apply ml-5 overflow-hidden transition-all duration-500 ease-in-out;
+  }
+
+  i.icon-toggle-item-menu-moblie {
+    @apply duration-500;
+  }
+
+  .menu-moblie li a {
+    @apply hover:text-[var(--primary)];
   }
 }
 
@@ -271,10 +275,6 @@
 
 .menu-item-sp {
   background: linear-gradient(270deg, #00bbf1 0%, #075da9 100%);
-}
-
-.menu-moblie .container > ul > li:hover .menu-moblie-item {
-  max-height: 15rem;
 }
 
 .fancy-box-item a::before {

@@ -19,23 +19,70 @@ var MAIN = {
 
   // Toggle show/hide menu buttons
   showMenu: function () {
-    var width_ = window.innerWidth
-    const btnMenu = document.querySelectorAll(".icon_bars")
+    const btnMenuDesktop = document.querySelector(".header-big .icon_bars")
     const toggleMenuDesktop = document.querySelector(".menu-desktop")
     const toggleMenuMoblie = document.querySelector(".menu-moblie")
-    btnMenu.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("open")
-        if (btn.classList.contains("open") && width_ >= 768) {
+    const btnMenuMoblie = document.querySelector(
+      ".header-moblie .btn-open-menu-moblie"
+    )
+    const btnCloseMenuMoblie = document.querySelector(".btn-close-menu-moblie")
+    const bgClickCloseMenuMoblie = document.querySelector(
+      ".bg-click-close-menu"
+    )
+    var btnClickMenuMoblie = [
+      btnMenuMoblie,
+      btnCloseMenuMoblie,
+      bgClickCloseMenuMoblie,
+    ]
+    btnMenuDesktop.addEventListener("click", () => {
+      btnMenuDesktop.classList.toggle("open")
+      if (btnMenuDesktop.classList.contains("open")) {
+        document.body.style.overflow = "hidden"
+      } else {
+        document.body.style.overflow = "auto"
+      }
+      toggleMenuDesktop.classList.toggle("invisible")
+      toggleMenuDesktop.classList.toggle("opacity-0")
+      toggleMenuDesktop.classList.toggle("translate-y-4")
+    })
+    btnClickMenuMoblie.forEach((i) => {
+      i.addEventListener("click", () => {
+        toggleMenuMoblie.classList.toggle("-translate-x-full")
+        bgClickCloseMenuMoblie.classList.toggle("translate-x-full")
+        if (!toggleMenuMoblie.classList.contains("-translate-x-full")) {
           document.body.style.overflow = "hidden"
         } else {
           document.body.style.overflow = "auto"
         }
-        toggleMenuDesktop.classList.toggle("invisible")
-        toggleMenuDesktop.classList.toggle("opacity-0")
-        toggleMenuDesktop.classList.toggle("translate-y-4")
-        toggleMenuMoblie.classList.toggle("max-h-[100rem]")
       })
+    })
+  },
+
+  // CLick item menu moblie
+  clickShowMenuItemMoblie: function () {
+    const all_li_menu_moblie = document.querySelectorAll(
+      ".menu-moblie > ul > li"
+    )
+    var icon_btn = `<i class="fa-solid fa-chevron-down p-3 cursor-pointer icon-toggle-item-menu-moblie"></i>`
+    all_li_menu_moblie.forEach((i) => {
+      i.querySelectorAll(".menu-item-moblie li").length
+        ? (i.querySelector("span").innerHTML += icon_btn)
+        : undefined
+    })
+    all_li_menu_moblie.forEach((i) => {
+      if (i.querySelector("span .icon-toggle-item-menu-moblie")) {
+        i.querySelector("span .icon-toggle-item-menu-moblie").addEventListener(
+          "click",
+          () => {
+            i.querySelector(".menu-item-moblie").classList.toggle(
+              "max-h-[100rem]"
+            )
+            i.querySelector(
+              "span .icon-toggle-item-menu-moblie"
+            ).classList.toggle("rotate-180")
+          }
+        )
+      }
     })
   },
 
@@ -313,6 +360,7 @@ var MAIN = {
     this.initAnimation()
     this.toggleMenuPageSp()
     this.clickItemMenuSanPham()
+    this.clickShowMenuItemMoblie()
   },
 }
 

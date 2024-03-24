@@ -64,11 +64,11 @@
       >
         <div class="container flex md:hidden py-5 items-center">
           <div class="w-[15%]">
-            <div class="icon_bars">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+            <span class="btn-open-menu-moblie">
+              <i
+                class="fa-solid fa-bars text-2xl hover:text-[var(--primary)] cursor-pointer"
+              ></i>
+            </span>
           </div>
 
           <a href="../../index.html" title="Trang chủ" class="grow">
@@ -413,58 +413,102 @@
 
       <!-- Menu moblie -->
       <div
-        class="menu-moblie absolute inset-x-0 top-0 z-30 md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0]"
+        class="menu-moblie fixed inset-y-0 left-0 max-w-[500px] w-full bg-white z-[55] md:hidden p-3 -translate-x-full transition-all duration-500 ease-in-out"
       >
-        <div class="container mt-[5rem]">
-          <ul>
-            <li>
-              <a
-                href="../../index.html"
-                class="w-full flex justify-between items-center"
-              >
-                <span>Trang chủ</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./gioi-thieu.html"
-                class="w-full flex justify-between items-center"
-              >
-                <span>Giới Thiệu</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="w-full flex justify-between items-center">
-                <span>Sản phẩm</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./tu-van-san-pham.html"
-                class="w-full flex justify-between items-center"
-              >
-                <span>tư vấn sản phẩm</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./tin-tuc-su-kien.html"
-                class="w-full flex justify-between items-center"
-              >
-                <span>Tin tức & sự kiện</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./lien-he.html"
-                class="w-full flex justify-between items-center"
-              >
-                <span>Liên hệ</span>
-              </a>
-            </li>
-          </ul>
+        <div class="py-3 flex border-b border-solid border-[var(--secondary)]">
+          <span class="block w-1/12"></span>
+          <span class="grow flex justify-center items-center">
+            <span class="max-w-52 block">
+              <img src="../imgs/logo-header.png" alt="" />
+            </span>
+          </span>
+          <span class="w-1/12 flex items-center justify-end">
+            <i
+              class="fa-solid fa-arrow-right-to-bracket text-2xl cursor-pointer rotate-180 hover:scale-125 hover:text-[var(--primary)] btn-close-menu-moblie"
+            ></i>
+          </span>
+        </div>
+        <ul>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href="../../index.html"> Trang chủ </a>
+            </span>
+          </li>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href="./gioi-thieu.html"> Giới Thiệu </a>
+            </span>
+          </li>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href=""> Sản phẩm </a>
+            </span>
+            <div class="menu-item-moblie max-h-0">
+              <ul>
+                <li><a href="./san-pham.html">Keo Công Nghiệp</a></li>
+                <li>
+                  <a href="./san-pham.html"
+                    >Nguyên liệu sơn nước & HÓA CHẤT XÂY DỰNG</a
+                  >
+                </li>
+                <li>
+                  <a href="./san-pham.html">Hóa chất cho in vải & DệT Nhuộm</a>
+                </li>
+                <li>
+                  <a href="./san-pham.html">Hóa chất cho dệt nhuộm</a>
+                </li>
+                <li>
+                  <a href="./san-pham.html">Hóa chất cho in Vải</a>
+                </li>
+                <li><a href="./san-pham.html">Hóa chất khác</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href="./tu-van-san-pham.html"> tư vấn sản phẩm </a>
+            </span>
+          </li>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href="./tin-tuc-su-kien.html"> Tin tức & sự kiện </a>
+            </span>
+            <div class="menu-item-moblie max-h-0">
+              <ul>
+                <li><a href="./chi-tiet-tin-tuc.html">Tin tức</a></li>
+                <li><a href="./chi-tiet-tin-tuc.html">sự kiện</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span class="flex items-center justify-between">
+              <a href="./lien-he.html">Liên hệ</a>
+            </span>
+          </li>
+        </ul>
+        <div class="pt-7 flex justify-center items-center">
+          <a href="" title="" class="px-3">
+            <i
+              class="fa-brands fa-facebook text-3xl text-[var(--primary)] hover:text-black"
+            ></i>
+          </a>
+          <a href="" title="" class="px-3">
+            <i
+              class="fa-brands fa-instagram text-3xl text-[var(--primary)] hover:text-black"
+            ></i>
+          </a>
+          <a href="" title="" class="px-3">
+            <i
+              class="fa-brands fa-twitter text-3xl text-[var(--primary)] hover:text-black"
+            ></i>
+          </a>
         </div>
       </div>
+
+      <!-- bg-moblie-open-menu -->
+      <div
+        class="fixed right-0 inset-y-0 max-w-[300px] w-full z-[54] translate-x-full bg-black/30 bg-click-close-menu transition-all duration-700 ease-in-out"
+      ></div>
     </header>
 
     <main>
