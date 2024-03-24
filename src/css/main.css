@@ -977,6 +977,10 @@ i.icon-toggle-item-menu-moblie {
   color: var(--primary);
 }
 
+.item-san-pham-moblie-active {
+  color: var(--primary);
+}
+
 .visible {
   visibility: visible;
 }
@@ -1455,12 +1459,6 @@ i.icon-toggle-item-menu-moblie {
 
 .resize {
   resize: both;
-}
-
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .flex-col {

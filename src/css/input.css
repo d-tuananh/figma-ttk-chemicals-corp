@@ -213,6 +213,10 @@
   .menu-moblie li a {
     @apply hover:text-[var(--primary)];
   }
+
+  .item-san-pham-moblie-active {
+    @apply text-[var(--primary)];
+  }
 }
 
 .banner-slide {
